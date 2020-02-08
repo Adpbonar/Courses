@@ -1,5 +1,10 @@
 import React, { Component } from 'react';
 import './App.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+
+import Jumbotron from './jumbotron'
 
 class App extends Component {
   constructor(props) {
@@ -17,7 +22,7 @@ class App extends Component {
   }
   render() {
     return (
-      <div>This is our home component</div>
+      <Jumbotron />
     )
   }
 
