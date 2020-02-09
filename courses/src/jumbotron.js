@@ -11,7 +11,7 @@ return(
             <Header>Take one of our courses</Header> 
             <Subheader>Unlock your potential.</Subheader>
             <div className="CTA">
-              <Button className="jumbotronButton">start</Button>
+              <Button href="https://www.devanpotterbonar.com/">start</Button>
             </div>
           </div>
         </div>
