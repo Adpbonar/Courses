@@ -5,3 +5,14 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+course = Course.create(title: "course 1", description: "mock course")
+
+section = Section.create(title: "Dummy Data for Course", course: course)
+n = 0
+5.times do 
+  n = n + 1
+  Episode.create(title: "Lesson #{n}", description: "mock lesson", url: "url", section: section)
+end
+
+
+
