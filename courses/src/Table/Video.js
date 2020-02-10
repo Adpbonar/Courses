@@ -1,9 +1,9 @@
 import React from 'react'
 
-const Video = () => {
+const Video = (props) => {
   return(
     <div className="pt-4 pb-4">
-      <p>Video</p>
+      <iframe height="100%" src={props.url} frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
   )
 }

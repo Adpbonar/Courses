@@ -16,6 +16,7 @@ const Header = styled.h1`
   letter-spacing: 3px;
   text-align: center;
   margin-bottom: 20px;
+  vertical-align: middle;
 `
 
 const Subheader  = styled.p`
@@ -24,6 +25,7 @@ const Subheader  = styled.p`
 `
 
 const Button = styled.a`
+  margin-top: 100px !important;
   display: inline-block;
   text-decoration: none;
   font-size:20px;
@@ -31,22 +33,31 @@ const Button = styled.a`
   font-weight: bold;
   border-top-right-radius: 15px;
   border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 2px;
+  border-top-left-radius: 2px;
   cursor: pointer !important;
   background: #e8e8e8;
   padding: 10px 20px;
-  width: 50%;
+  min-width: 50%;
+  max-width: 60%;
+  color: #807ab9;
+  letter-spacing: 2px;
   text-transform: uppercase;
   margin-top: 10px;
-  box-shadow: 0px 0px 0px 3px red,
-    -6px 6px grey,
-    -6px 6px 0px 3px red;
+  font-decoration: none;
+  border: 5px solid red;
+    &:hover, &:focus {
+      background-color: blue !important;
+      color: white !important;
+      text-decoration: none !important;
+    }
  `
 const ItemButton = styled.a`
   display: inline-block;
   text-decoration: none;
   font-size: 15x;
-  border-top-right-radius: 15px;
-  border-bottom-left-radius: 15px;
+  border-top-right-radius: 5px;
+  border-bottom-left-radius: 5px;
   text-align: center;
   font-weight: bold;
   cursor: pointer;
@@ -55,7 +66,7 @@ const ItemButton = styled.a`
   text-transform: uppercase;
   margin-top: 10px;
   box-shadow: 0px 0px 0px 3px red,
-    -6px 6px white,
+    -2px 2px white,
     -6px 6px 0px 3px red;
   color: red !important;
   margin: 20px;

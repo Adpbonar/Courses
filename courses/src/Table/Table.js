@@ -9,9 +9,9 @@ class Table extends Component {
       let videoChangeActive = this.props.videoChangeActive.bind(this, data)
       return(
         data.active ?
-          <ActiveItem videoChangeActive = {videoChangeActive} key={data.id} title={data.title} description={data.description} />
+          <ActiveItem videoChangeActive = {videoChangeActive} key={data.id} title={data.title} description={data.description} url={data.url} />
         :
-          <Item videoChangeActive = {videoChangeActive} key={data.id} title={data.title} description={data.description} />
+          <Item videoChangeActive = {videoChangeActive} key={data.id} title={data.title} description={data.description} url={data.url} />
       )
     })
     return (

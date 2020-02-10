@@ -12,15 +12,15 @@ class App extends Component {
     super(props);
 
     this.state = {
-      course_modules: [
-        {id: 1, title: '1', description: 'Lorem ipsum', active: false},
-        {id: 2, title: '1', description: 'Lorem ipsum', active: false},
-        {id: 3, title: '1', description: 'Lorem ipsum', active: false},
-        {id: 4, title: '1', description: 'Lorem ipsum', active: false},
-        {id: 5, title: '1', description: 'Lorem ipsum', active: false}    
-      ]
+      course_modules: []
     }
   }
+
+  componentDidMount() {
+    fetch('/episodes')
+      .then(response => response.json())
+      .then(json => this.setState({course_modules: json}))
+}
 
   videoChangeActive(item, event) {
     event.preventDefault()

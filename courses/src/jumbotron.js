@@ -10,14 +10,13 @@ return(
           <div className="pt-4 mt-4">
             <Header>Take one of our courses</Header> 
             <Subheader>Unlock your potential.</Subheader>
-            <div className="CTA">
-              <Button href="https://www.devanpotterbonar.com/">start</Button>
-            </div>
           </div>
         </div>
         <div className="col col-sm12 col-md-7">
           <div className="pt4 mt4 text-center">
-            <p>test</p>
+          <div className="CTA">
+              <Button href="https://www.devanpotterbonar.com/">start</Button>
+            </div>
           </div>
         </div>
       </div>

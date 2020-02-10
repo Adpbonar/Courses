@@ -1,5 +1,4 @@
 class EpisodesController < ApplicationController
-  class episodesController < ApplicationController
     before_action :set_episode, only: [:show, :update, :destroy]
   
     # GET /episodes
@@ -50,5 +49,3 @@ class EpisodesController < ApplicationController
         params.require(:episode).permit(:title, :description, :url)
       end
   end
-  
-end

@@ -7,7 +7,7 @@ const ActiveItem = (props) => {
         <div className="card px-5">
           <div className="row">
             <div className="col-md-10 offset-1 text-center">
-              <Video />
+              <Video key={props.id} title={props.title} description={props.description} url={props.url} />
               <div className="text-left">
                 <h4>{ props.title }</h4>
                 <p>{ props.description }</p>

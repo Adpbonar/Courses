@@ -22,7 +22,7 @@ ActiveRecord::Schema.define(version: 2020_02_09_041148) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
-  create_table "episodes", force: :cascade do |t|
+  create_table, force: :cascade do |t|
     t.string "title"
     t.string "description"
     t.string "url"

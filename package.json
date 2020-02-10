@@ -1,10 +1,19 @@
 {
   "dependencies": {
+    "axios": "^0.19.2",
     "bootstrap": "^4.4.1",
     "jquery": "^3.4.1",
     "path": "^0.12.7",
     "popper": "^1.0.1",
     "popper.js": "^1.16.1",
     "styled-components": "^5.0.1"
-  }
+  },
+  "author": "Yarn Contributor",
+  "license": "MIT"
+},
+
+"scripts": {
+  "build": "cd client && yarn install && yarn build && cd ..",
+  "deploy": "cp -a client/build/. public/",
+  "postinstall": "yarn build && yarn deploy && echo 'Client built!'"
 }
