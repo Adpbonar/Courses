@@ -13,7 +13,7 @@
 },
 
 "scripts": {
-  "build": "cd client && yarn install && yarn build && cd ..",
-  "deploy": "cp -a client/build/. public/",
+  "build": "cd courses && yarn install && yarn build && cd ..",
+  "deploy": "cp -a courses/build/. public/",
   "postinstall": "yarn build && yarn deploy && echo 'Client built!'"
 }
