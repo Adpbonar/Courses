@@ -10,7 +10,7 @@
   },
   "author": "Yarn Contributor",
   "license": "MIT"
-}
+},
 
 "scripts": {
   "build": "cd courses && yarn install && yarn build && cd ..",
