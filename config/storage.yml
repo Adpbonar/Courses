@@ -18,7 +18,7 @@ local:
 google:
   service: GCS
   project: lc-courses-site-on-production
-  credentials: <%= Rails.root.join("path/to/gcs.keyfile") %>
+  credentials: <%= ENV['GOOGLE_APPLICATION_CREDENTIALS'].as_json %>
   bucket: lc-courses-site-on-production
 
 # Use rails credentials:edit to set the Azure Storage secret (as azure_storage:storage_access_key)

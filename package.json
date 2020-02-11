@@ -21,8 +21,7 @@
   "deploy": "cp -a client/build/. public/",
   "postinstall": "yarn build && yarn deploy && echo 'Client built!'"
 },
-"yarn": "1.19.1",
+  "yarn": "1.19.1",
     "npm": "6.12.0",
     "node": "12.13.0"
   },
-  
