@@ -8,6 +8,16 @@
     "popper.js": "^1.16.1",
     "styled-components": "^5.0.1"
   },
+  "scripts": {
+    "build": "cd client && yarn install && yarn build && cd ..",
+    "deploy": "cp -a client/build/. public/",
+    "postinstall": "yarn build && yarn deploy && echo 'Client built!'"
+  },
+  "engines": {
+    "yarn": "1.21.1",
+    "npm": "6.11.3",
+    "node": "12.11.1"
+  },
   "name": "lc-courses-site",
   "version": "1.0",
   "description": "Video courses built in react",
@@ -15,17 +25,4 @@
   "repository": "git@github.com:Adpbonar/Courses.git",
   "author": "Devan Potter-Bonar <devan.potter.bonar@gmail.com>",
   "license": "MIT"
-},
-
-  "scripts": {
-    "build": "cd client && yarn install && yarn build && cd ..",
-    "deploy": "cp -a client/build/. public/",
-    "postinstall": "yarn build && yarn deploy && echo 'Client built!'"
-  },
-
-
-"engines": {
-  "yarn": "1.21.1",
-  "npm": "6.11.3",
-  "node": "12.11.1"
-},
+}
