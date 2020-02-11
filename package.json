@@ -1,13 +1,9 @@
-"scripts": {
-  "build": "cd client && yarn install && yarn build && cd ..",
-  "deploy": "cp -a client/build/. public/",
-  "postinstall": "yarn build && yarn deploy && echo 'Client built!'"
-},
-  "yarn": "1.19.1",
-    "npm": "6.12.0",
-    "node": "12.13.0"
-  },
 {  
+  "scripts": {
+    "build": "cd client && yarn install && yarn build && cd ..",
+    "deploy": "cp -a client/build/. public/",
+    "postinstall": "yarn build && yarn deploy && echo 'Client built!'"
+  },
   "dependencies": {
     "axios": "^0.19.2",
     "bootstrap": "^4.4.1",
@@ -23,5 +19,9 @@
   "main": "app.js",
   "repository": "git@github.com:Adpbonar/Courses.git",
   "author": "Devan Potter-Bonar <devan.potter.bonar@gmail.com>",
-  "license": "MIT"
-},
+  "license": "MIT",
+  "yarn": "1.19.1",
+      "npm": "6.12.0",
+      "node": "12.13.0"
+    }
+}
