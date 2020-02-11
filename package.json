@@ -14,14 +14,15 @@
   "main": "app.js",
   "repository": "git@github.com:Adpbonar/Courses.git",
   "author": "Devan Potter-Bonar <devan.potter.bonar@gmail.com>",
-  "license": "MIT"
-},
+  "license": "MIT",
 
-"scripts": {
-  "build": "cd client && yarn install && yarn build && cd ..",
-  "deploy": "cp -a client/build/. public/",
-  "postinstall": "yarn build && yarn deploy && echo 'Client built!'"
-},
+  "scripts": {
+    "build": "cd client && yarn install && yarn build && cd ..",
+    "deploy": "cp -a client/build/. public/",
+    "postinstall": "yarn build && yarn deploy && echo 'Client built!'"
+  },
+
+
 "engines": {
   "yarn": "1.21.1",
   "npm": "6.11.3",
