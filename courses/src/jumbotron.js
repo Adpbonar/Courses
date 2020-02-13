@@ -6,7 +6,7 @@ return(
   <Section className="app-section--1">
     <div className="container">
       <div className="row">
-        <div className="col col-sm-12 col-md-5">
+        <div className="col col-sm-md-5 col-12">
           <div className="pt-4 mt-4">
             <Header>Take one of our courses</Header> 
             <Subheader>Unlock your potential.</Subheader>

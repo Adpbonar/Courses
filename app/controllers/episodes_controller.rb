@@ -1,5 +1,6 @@
 class EpisodesController < ApplicationController
     before_action :set_episode, only: [:show, :update, :destroy]
+    has_one_attached :video
   
     # GET /episodes
     def index
